@@ -1,0 +1,43 @@
+{
+  "name": "Company Case Reply",
+  "description": "This app allows you to reply to company cases.",
+  "keywords": ["Desk.com", "Customer Portal", "Cases"],
+  "website": "https://www.desk.com",
+  "repository": "https://github.com/desklabs/company-reply",
+  "logo": "https://avatars3.githubusercontent.com/u/12802337?v=3&s=200",
+  "env": {
+    "SUPPORT_EMAIL": {
+      "description": "The support email replies are getting 'sent' to.",
+      "required": true
+    },
+    "DESK_CONSUMER_KEY": {
+      "description": "Consumer key for the API application.",
+      "required": true
+    },
+    "DESK_CONSUMER_SECRET": {
+      "description": "Consumer secret for the API application.",
+      "required": true
+    },
+    "DESK_TOKEN": {
+      "description": "Token for the API application.",
+      "required": true
+    },
+    "DESK_TOKEN_SECRET": {
+      "description": "Token secret for the API application.",
+      "required": true
+    },
+    "DESK_ENDPOINT": {
+      "description": "API url endpoint.",
+      "required": true
+    }
+  }
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "Standard-1X"
+    }
+  },
+  "buildpacks": [{
+    "url": "heroku/ruby"
+  }]
+}
