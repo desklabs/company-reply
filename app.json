@@ -30,7 +30,7 @@
       "description": "API url endpoint.",
       "required": true
     }
-  }
+  },
   "formation": {
     "web": {
       "quantity": 1,
