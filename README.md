@@ -12,7 +12,7 @@ First, install this application by deploying the source code to your Heroku acco
   {% if case.customer.id == desk.customer.id %}
   {{form_begin}}
   {% else %}
-  <form action="https://YOURAPP.herokuapps.com/reply" enctype="multipart/form-data" class="new_reply" id="new_reply" method="post">
+  <form action="https://YOURAPP.herokuapp.com/reply" enctype="multipart/form-data" class="new_reply" id="new_reply" method="post">
     <input id="interaction_ticket_id" name="interaction[ticket_id]" type="hidden" value="{{case.id}}">
     <input id="interaction_customer_email" name="interaction[customer_email]" type="hidden" value="{{desk.customer.email}}"> 
   {% endif %}
